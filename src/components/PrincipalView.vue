@@ -27,10 +27,11 @@ const btn2 = ref('Saiba Mais')
     /* Imagem de Funco */
     .main{
         background-color: var(--color-preto);
-        height: 100dvh;
-        width: 100dvw;
+        height: 100vh;
+        width: 100%;
         position: relative;
         z-index: 1;
+        border-radius: 15px;
     }
 
     .main::before{
@@ -46,6 +47,7 @@ const btn2 = ref('Saiba Mais')
         width: 100%;
         opacity: 0.7;
         z-index: -1;
+        border-radius: 15px;
     }
 
     @media screen and (max-width: 500px) {
@@ -74,6 +76,7 @@ const btn2 = ref('Saiba Mais')
     button#secundario{
         background-color: var(--color-texto-secundario);
         border: 1px solid var(--color-branco);
+        padding: 10px;
     }
     span{
         color: var(--color-laranja);

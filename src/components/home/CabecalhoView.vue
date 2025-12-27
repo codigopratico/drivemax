@@ -17,7 +17,7 @@ const toggle = () => {
 </script>
 
 <template>
-    <header class="cabecalho">
+    <header class="cabecalho" :class="{active: responsivo}">
         <div class="logo">
             <img src="../../assets/img/logo.png" alt="">
             <div class="icone_menu">
@@ -54,8 +54,10 @@ const toggle = () => {
         height: 90px;
         padding: 0 25px;
         top: 0;
+        left: 0;
         position: absolute;
-        width: 100%;
+        box-sizing: border-box;
+        inset: 0;
         z-index: 2;
     }
     .navigation{
@@ -102,6 +104,8 @@ const toggle = () => {
             flex-direction: column;
             padding: 10px 22px;
             height: fit-content;
+        }.active{
+            background-color: var(--color-preto);
         }
         .icone_menu{
             display: block;
@@ -118,28 +122,37 @@ const toggle = () => {
             flex-direction: column;
             padding: 10px 0;
             align-items: center;
-            background: rgba(255, 255, 255, 0.001);
-            backdrop-filter: blur(20px);
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         .links{
             flex-direction: column;
             align-items: left;
             padding-bottom: 10px;
             gap: 10px;
-            padding: 0 10px;
+            padding: 0 5px 15px 5px;
+            width: 100%;
         }
         .links a{
             font-size: var(--text-link-responsivo);
             border-bottom: 1px solid var(--color-branco);
             padding: 5px 0px 10px 5px;
             border-right: none;
-            width: var(--width-links);
         }.links a:focus{
             padding: 10px 0px 10px 5px;
+        }
+        .logo img{
+            box-shadow: none;
         }
         button{
             font-size: var(--text-butao-responsivo);
             margin-top: 10px;
+        }
+    }
+    @media screen and (max-width: 475px) {
+        .cabecalho{
+            padding: 10px 10px 0 10px;
         }
     }
 </style>

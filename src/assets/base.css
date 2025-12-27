@@ -13,6 +13,8 @@
 
   --color-estrela: #FFC107;
   --color-sucesso: #4CAF50;
+
+  --color-rodape-bg: #1B2630;
 }
 
 /* TAMANHO */
@@ -24,10 +26,15 @@
   --text-butao: clamp(12px, 2vw, 17px);
   --text-butao-responsivo: clamp(18px, 2vw, 22px);
 
+  --text-redes: clamp(17px, 2vw, 19px);
+
   --text-titulo: clamp(40px, 4vw, 62px);
   --text-subtitulo: clamp(26px, 3vw, 32px);
 
-  --img-logo: clamp(38px, 3vw, 48px);
+  --text-titulo-secundario: clamp(32px, 4vw, 45px);
+  --text-subtitulo-secundario: clamp(23px, 3vw, 30px);
+
+  --img-logo: clamp(40px, 3vw, 48px);
 
   --width-links: clamp(100px, 95vw, 700px);
 }
