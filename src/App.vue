@@ -1,17 +1,23 @@
 <script setup>
 import PrincipalView from '@/components/PrincipalView.vue';
 import ChamadaView from './components/ChamadaView.vue';
+import ServicosView from './components/ServicosView.vue';
 
 </script>
 
 <template>
   <div class="container">
-    <div id="inicio">
+    <section id="inicio">
       <PrincipalView />
-    </div>
-    <div id="rodape">
+    </section>
+
+    <section id="servicos">
+      <ServicosView />
+    </section>
+
+    <section id="contato">
       <ChamadaView />
-    </div>
+    </section>
   </div>
 
 </template>
@@ -20,7 +26,7 @@ import ChamadaView from './components/ChamadaView.vue';
   .container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     padding: clamp(12px, 3vw, 16px);
     background-color: var(--color-branco);
   }

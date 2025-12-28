@@ -73,6 +73,7 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
         }
         .texto{
             align-items: start;
+            padding: 10px;
         }
         .butoes{
             padding: 10px;

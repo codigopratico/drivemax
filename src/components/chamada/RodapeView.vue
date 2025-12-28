@@ -37,11 +37,11 @@ const email = ref('drivemax@gmail.com')
             </div>
 
             <div class="links">
-                <a href="#">{{ link_1 }}</a>
+                <a href="#inicio">{{ link_1 }}</a>
                 <a href="#">{{ link_2 }}</a>
                 <a href="#">{{ link_3 }}</a>
                 <a href="#">{{ link_4 }}</a>
-                <a href="#" id="contato">{{ link_5 }}</a>
+                <a href="#contato" id="contato">{{ link_5 }}</a>
             </div>
             <div class="copy">
                 <p>&copy;{{ copy }}</p>
@@ -72,6 +72,9 @@ const email = ref('drivemax@gmail.com')
         gap: 3px;
         font-size: var(--text-redes);
         cursor: pointer;
+        transition: all 200ms;
+    }.icones li:hover{
+        transform: scale(1.03);
     }
     img{
         height: var(--img-logo);
@@ -88,7 +91,11 @@ const email = ref('drivemax@gmail.com')
     }.links a{
         padding: 0 2.5%;
         border-right: 1px solid var(--color-borda);
-    }#contato{
+        transition: all 200ms;
+    }.links a:hover{
+        transform: scale(1.03);
+    }
+    #contato{
         border: none;
     }
     .copy{

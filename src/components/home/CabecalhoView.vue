@@ -32,11 +32,11 @@ const toggle = () => {
         </div>
         <div :class="{navigation: !responsivo, menu: responsivo}">
             <nav class="links">
-                <a href="#">{{ link_1 }}</a>
+                <a href="#inicio">{{ link_1 }}</a>
                 <a href="#">{{ link_2 }}</a>
                 <a href="#">{{ link_3 }}</a>
                 <a href="#">{{ link_4 }}</a>
-                <a href="#">{{ link_5 }}</a>
+                <a href="#contato">{{ link_5 }}</a>
             </nav>
             <div class="butao">
                 <button>{{ btn }}</button>

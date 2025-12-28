@@ -10,6 +10,7 @@
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -41,4 +42,13 @@ button{
 button:hover{
     background-color: var(--color-laranja-hover);
     transform: scale(1.02);
+}
+
+.titulo{
+    background-color: var(--color-preto-texto);
+    padding: 15px 0 15px 0px;
+    border-radius: 14px 14px 0 0;
+    width: 100%;
+    font-size: var(--text-servicos-principal);
+    text-align: center;
 }
