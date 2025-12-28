@@ -44,6 +44,7 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        text-align: center;
     }
     h1, h4{
         color: var(--color-preto-texto);
@@ -72,6 +73,7 @@ const btn2 = ref('FALAR COM UM ESPECIALISTA')
             padding: 15px 0 15px 5px;
         }
         .texto{
+            text-align: start;
             align-items: start;
             padding: 10px;
         }

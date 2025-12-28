@@ -7,7 +7,7 @@
   --color-preto-texto: #1E1E1E;
   --color-branco: #FFF;
 
-  --color-fundo-branco: #D1D1D1;
+  --color-fundo-branco: #D7D7D7;
   --color-borda: #D9D9D9;
   --color-texto-secundario: #6B6B6B;
 
@@ -34,7 +34,7 @@
   --text-titulo-secundario: clamp(32px, 4vw, 45px);
   --text-subtitulo-secundario: clamp(23px, 3vw, 30px);
 
-  --text-servicos-principal: clamp(14px, 3vw, 18px);
+  --text-servicos-principal: clamp(12px, 3vw, 18px);
   --text-servicos-titulo: clamp(20px, 3vw, 26px);
   --text-servicos-subtitulo: clamp(17px, 2vw, 19px);
 

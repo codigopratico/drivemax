@@ -5,7 +5,7 @@ import { ref } from 'vue'
 const link_1 = ref('Início')
 const link_2 = ref('Serviços')
 const link_3 = ref('Depoimentos')
-const link_4 = ref('Como Funciona')
+const link_4 = ref('Compra Segura')
 const link_5 = ref('Contato')
 const btn = ref('AGENDAR CONSULTORIA')
 
@@ -32,11 +32,26 @@ const toggle = () => {
         </div>
         <div :class="{navigation: !responsivo, menu: responsivo}">
             <nav class="links">
-                <a href="#inicio">{{ link_1 }}</a>
-                <a href="#">{{ link_2 }}</a>
-                <a href="#">{{ link_3 }}</a>
-                <a href="#">{{ link_4 }}</a>
-                <a href="#contato">{{ link_5 }}</a>
+                <a href="#inicio">
+                    <i class="bi bi-house-fill"></i>
+                    {{ link_1 }}
+                </a>
+                <a href="#servicos">
+                    <i class="bi bi-briefcase-fill"></i>
+                    {{ link_2 }}
+                </a>
+                <a href="#">
+                    <i class="bi bi-chat-dots-fill"></i>
+                    {{ link_3 }}
+                </a>
+                <a href="#">
+                    <i class="bi bi-shield-fill-check"></i>
+                    {{ link_4 }}
+                </a>
+                <a href="#contato">
+                    <i class="bi bi-telephone-fill"></i>
+                    {{ link_5 }}
+                </a>
             </nav>
             <div class="butao">
                 <button>{{ btn }}</button>
@@ -83,7 +98,10 @@ const toggle = () => {
         border-right: 2px solid var(color-borda);
         padding: 5px 10px 5px 10px;
         font-size: var(--text-link);
-        text-shadow: 10px 10px 25px #1f1f1f;
+        text-shadow: 1px 1px 25px #1f1f1f;
+        display: flex;
+        align-items: center;
+        gap: 3px;
     }.links a:focus{
         border-bottom: 3px solid var(--color-laranja);
         box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
@@ -96,6 +114,10 @@ const toggle = () => {
         font-size: 33.5px;
         cursor: pointer;
         padding: 5px;
+    }
+    i.bi{
+        font-size: 26px;
+        color: var(--color-branco);
     }
 
     /* Menu resposivo */

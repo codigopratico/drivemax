@@ -2,6 +2,7 @@
 import PrincipalView from '@/components/PrincipalView.vue';
 import ChamadaView from './components/ChamadaView.vue';
 import ServicosView from './components/ServicosView.vue';
+import SegurancaView from './components/SegurancaView.vue';
 
 </script>
 
@@ -13,6 +14,10 @@ import ServicosView from './components/ServicosView.vue';
 
     <section id="servicos">
       <ServicosView />
+    </section>
+
+    <section id="seguranca">
+      <SegurancaView />
     </section>
 
     <section id="contato">

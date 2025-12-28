@@ -45,8 +45,8 @@ button:hover{
 }
 
 .titulo{
-    background-color: var(--color-preto-texto);
-    padding: 15px 0 15px 0px;
+    background-color: var(--color-rodape-bg);
+    padding: 15px 5px;
     border-radius: 14px 14px 0 0;
     width: 100%;
     font-size: var(--text-servicos-principal);

@@ -4,7 +4,7 @@ import { ref } from 'vue'
 const link_1 = ref('Início')
 const link_2 = ref('Serviços')
 const link_3 = ref('Depoimentos')
-const link_4 = ref('Como Funciona')
+const link_4 = ref('Compra Segura')
 const link_5 = ref('Contato')
 
 const copy = ref('2025 DriveMax. Projeto fictício desenvolvido para fins educacionais.')
@@ -37,11 +37,26 @@ const email = ref('drivemax@gmail.com')
             </div>
 
             <div class="links">
-                <a href="#inicio">{{ link_1 }}</a>
-                <a href="#">{{ link_2 }}</a>
-                <a href="#">{{ link_3 }}</a>
-                <a href="#">{{ link_4 }}</a>
-                <a href="#contato" id="contato">{{ link_5 }}</a>
+                <a href="#inicio">
+                    <i class="bi bi-house-fill"></i>
+                    {{ link_1 }}
+                </a>
+                <a href="#servicos">
+                    <i class="bi bi-briefcase-fill"></i>
+                    {{ link_2 }}
+                </a>
+                <a href="#">
+                    <i class="bi bi-chat-dots-fill"></i>
+                    {{ link_3 }}
+                </a>
+                <a href="#">
+                    <i class="bi bi-shield-fill-check"></i>
+                    {{ link_4 }}
+                </a>
+                <a href="#contato">
+                    <i class="bi bi-telephone-fill"></i>
+                    {{ link_5 }}
+                </a>
             </div>
             <div class="copy">
                 <p>&copy;{{ copy }}</p>
@@ -108,6 +123,9 @@ const email = ref('drivemax@gmail.com')
     }
     i{
         color: var(--color-laranja);
+    }
+    i.bi{
+        color: var(--color-branco);
     }
 
     @media screen and (max-width: 768px){

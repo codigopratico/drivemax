@@ -39,6 +39,7 @@ const servicos = ref([
         justify-content: center;
         align-items: center;
         gap: 35px;
+        padding: 0 10px;
     }.card{
         display: flex;
         flex-direction: column;
