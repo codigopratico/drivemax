@@ -55,7 +55,7 @@ const icones = ref([
         color: var(--color-preto);
     }
     img{
-        height: 160px;
+        height: clamp(100px, 4vh, 160px);
         width: fit-content;
     }
 
