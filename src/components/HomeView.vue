@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import CabecalhoView from '@/components/home/CabecalhoView.vue'
+import Header from '@/components/BaseHeader.vue'
 
 const texto = ref('Nós ajudamos você a comprar o carro ideal com segurança e confiança.')
 
@@ -11,7 +11,7 @@ const btn2 = ref('SAIBA MAIS')
 
 <template>
     <div class="main">
-        <CabecalhoView />
+        <Header />
         <div class="conteudo">
             <h1>ESCOLHER O <span>CARRO CERTO</span> PODE SER COMPLICADO.</h1>
             <h4>{{ texto }}</h4>
@@ -26,7 +26,7 @@ const btn2 = ref('SAIBA MAIS')
 <style scoped>
     /* Imagem de Funco */
     .main{
-        background-color: var(--color-preto);
+        background-color: var(--bg-page);
         height: 100vh;
         width: 100%;
         position: relative;
@@ -65,21 +65,21 @@ const btn2 = ref('SAIBA MAIS')
         height: 100%;
         gap: 40px;
     }.conteudo h1{
-        font-size: var(--text-titulo);
+        font-size: var(--font-heading-xl);
         text-shadow: 10px 10px 100px #1f1f1f;
         width: 65%;
     }.conteudo h4{
-        font-size: var(--text-subtitulo);
+        font-size: var(--font-subtitle-lg);
         width: 40%;
         text-shadow: 10px 10px 100px #1f1f1f;
     }
     button#secundario{
-        background-color: var(--color-texto-secundario);
-        border: 1px solid var(--color-branco);
+        background-color: var(--text-muted);
+        border: 1px solid var(--border-default);
         padding: 10px;
     }
     span{
-        color: var(--color-laranja);
+        color: var(--brand-primary);
     }
     button a{
         padding: 10px;
@@ -89,7 +89,7 @@ const btn2 = ref('SAIBA MAIS')
         display: flex;
         gap: 10px;
     }.botoes button{
-        font-size: var(--text-butao-principal);
+        font-size: var(--font-button-lg);
     }
 
     @media screen and (max-width: 1024px){

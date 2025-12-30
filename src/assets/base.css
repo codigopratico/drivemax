@@ -1,54 +1,65 @@
-/* CORES */
-:root {
-  --color-laranja: #F57C00;
-  --color-laranja-hover: #E56F00;
-
-  --color-preto: #1F2A33;
-  --color-preto-texto: #1E1E1E;
-  --color-branco: #FFF;
-
-  --color-fundo-branco: #2A3640;
-  --color-borda: #D9D9D9;
-  --color-texto-secundario: #6B6B6B;
-
-  --color-estrela: #FFC107;
-  --color-sucesso: #4CAF50;
-
-  --color-rodape-bg: #1B2630;
-}
-
-/* TAMANHO */
 :root{
-  --text-link: clamp(15px, 2vw, 19px);
-  --text-link-responsivo: clamp(18px, 2vw, 22px);
+  /* CORES */
 
-  --text-butao-principal: clamp(16px, 2vw, 20px);
-  --text-butao: clamp(12px, 2vw, 17px);
-  --text-butao-responsivo: clamp(18px, 2vw, 22px);
+  /* Cores Principais */
+  --brand-primary: #F57C00;
+  --brand-primary-hover: #E56F00;
 
-  --text-redes: clamp(17px, 2vw, 19px);
+  /* Cores de Fundo */
+  --bg-page: #1F2A33;
+  --bg-section-dark: #2A3640;
+  --bg-section-light: #E6E9ED;
+  --bg-footer: #1B2630; 
+  --bg-card: #FFFFFF;
+  --bg-page-light: #F2F4F6;
 
-  --text-titulo: clamp(40px, 4vw, 62px);
-  --text-subtitulo: clamp(26px, 3vw, 32px);
+  /* Cores para Textos */
+  --text-primary: #FFFFFF;
+  --text-dark: #1E1E1E;
+  --text-secondary: #B8C0C7;
+  --text-muted: #6B6B6B; 
 
-  --text-titulo-secundario: clamp(32px, 4vw, 45px);
-  --text-subtitulo-secundario: clamp(23px, 3vw, 30px);
+  /* Cor da Borda */
+  --border-default: #D9D9D9;
 
-  --text-servicos-principal: clamp(11px, 3vw, 18px);
-  --text-servicos-titulo: clamp(20px, 3vw, 26px);
-  --text-servicos-subtitulo: clamp(17px, 2vw, 19px);
+  /* Cor da Estrela - Avaliação */
+  --star: #FFC107;
 
-  --text-seguranca-titulo: clamp(17px, 2vw, 19px);
 
-  --text-comentario: clamp(20px, 3vw, 25px);
+  /* FONT-SIZE */
 
-  --img-logo: clamp(40px, 3vw, 48px);
+  /* Títulos */
+  --font-heading-xl: clamp(40px, 4vw, 62px);
+  --font-heading-lg: clamp(32px, 4vw, 45px);
 
-  --width-links: clamp(100px, 95vw, 700px);
-}
+  /* Subtítulos */
+  --font-subtitle-lg: clamp(26px, 3vw, 32px);
+  --font-subtitle-md: clamp(23px, 3vw, 30px);
 
-:root{
-  --family-principal: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
+  /* Serviços */
+  --font-body-sm: clamp(14px, 2vw, 16px);
+  --font-title-sm: clamp(20px, 3vw, 26px);
+  --font-body-md: clamp(17px, 2vw, 19px);
+
+  /* Links */
+  --font-link-lg: clamp(18px, 2vw, 22px);
+  --font-link-md: clamp(15px, 2vw, 19px);
+
+  /* Butões */
+  --font-button-xl: clamp(18px, 2vw, 22px);
+  --font-button-lg: clamp(16px, 2vw, 20px);
+  --font-button-sm: clamp(12px, 2vw, 17px);
+
+  /* Depoimentos - Comentários */
+  --font-comment: clamp(20px, 3vw, 25px);
+
+  /* Logo */
+  --size-logo: clamp(40px, 3vw, 48px);
+
+
+  /* FONT-FAMILY */
+
+  --font-primary-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial,
     sans-serif;
 }

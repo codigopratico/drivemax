@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import CardView from './CardView.vue';
+import UiCard from './UiCard.vue';
 
 import necessidade from '@/assets/img/secao_2/icone_necessidade.png'
 import busca from '@/assets/img/secao_2/icone_busca.png'
@@ -40,7 +40,7 @@ const btn = ref('FALE COM CONSULTOR')
         <div class="titulo">
             <h1>{{ titulo }}</h1>
         </div>
-        <CardView :servicos="servicos" />
+        <UiCard :servicos="servicos" />
         <div class="botao">
             <button><a href="https://github.com/codigopratico" target="_blank">{{ btn }}</a></button>
         </div>
@@ -49,7 +49,7 @@ const btn = ref('FALE COM CONSULTOR')
 
 <style scoped>
     .servicos{
-        background-color: var(--color-fundo-branco);
+        background-color: var(--bg-section-light);
         border-radius: 15px;
         display: flex;
         flex-direction: column;
@@ -58,7 +58,7 @@ const btn = ref('FALE COM CONSULTOR')
         padding: 0 0 25px 0;
     }
     .botao button{
-        font-size: var(--text-butao-responsivo);
+        font-size: var(--font-button-xl);
         text-shadow: 10px 10px 25px #fff;
     }
     button a{

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import AvaliacaoView from './depoimentos/AvaliacaoView.vue';
+import Review from './ReviewCard.vue';
 
 const titulo = ref('O QUE NOSSOS CLIENTES DIZEM')
 
@@ -8,10 +8,10 @@ const titulo = ref('O QUE NOSSOS CLIENTES DIZEM')
 
 <template>
     <div class="main">
-        <div class="titulo">
+        <div class="titulo light">
             <h1>{{ titulo }}</h1>
         </div>
-        <AvaliacaoView />
+        <Review />
     </div>
 </template>
 
@@ -23,6 +23,9 @@ const titulo = ref('O QUE NOSSOS CLIENTES DIZEM')
         align-items: center;
         gap: 35px;
         padding-bottom: 35px;
-        background-color: var(--color-fundo-branco);
+        background-color: var(--bg-section-dark);
+    }
+    h1{
+        color: var(--text-dark);
     }
 </style>

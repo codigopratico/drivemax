@@ -19,7 +19,7 @@ const toggle = () => {
 <template>
     <header class="cabecalho" :class="{active: responsivo}">
         <div class="logo">
-            <img src="../../assets/img/logo.png" alt="">
+            <img src="../assets/img/logo.png" alt="">
             <div class="icone_menu">
             <i class="bi bi-list" 
             @click="toggle" 
@@ -32,23 +32,23 @@ const toggle = () => {
         </div>
         <div :class="{navigation: !responsivo, menu: responsivo}">
             <nav class="links">
-                <a href="#inicio">
+                <a href="#home">
                     <i class="bi bi-house-fill"></i>
                     {{ link_1 }}
                 </a>
-                <a href="#servicos">
+                <a href="#services">
                     <i class="bi bi-briefcase-fill"></i>
                     {{ link_2 }}
                 </a>
-                <a href="#depoimentos">
+                <a href="#review">
                     <i class="bi bi-chat-dots-fill"></i>
                     {{ link_3 }}
                 </a>
-                <a href="#seguranca">
+                <a href="#security">
                     <i class="bi bi-shield-fill-check"></i>
                     {{ link_4 }}
                 </a>
-                <a href="#contato">
+                <a href="#contact">
                     <i class="bi bi-telephone-fill"></i>
                     {{ link_5 }}
                 </a>
@@ -88,7 +88,7 @@ const toggle = () => {
         justify-content: space-between;
     }
     .logo img{
-        height: var(--img-logo);
+        height: var(--size-logo);
         box-shadow: 0 4px 20px rgba(255, 255, 255, 0.02);
     }
     .links{
@@ -97,14 +97,14 @@ const toggle = () => {
     }.links a{
         border-right: 2px solid var(color-borda);
         padding: 5px 10px 5px 10px;
-        font-size: var(--text-link);
+        font-size: var(--font-link-md);
         text-shadow: 1px 1px 25px #1f1f1f;
         display: flex;
         align-items: center;
         gap: 3px;
         transition: all 200ms;
     }.links a:focus{
-        border-bottom: 3px solid var(--color-laranja);
+        border-bottom: 3px solid var(--brand-primary);
         box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
         border-radius: 7px;
     }.links a:hover{
@@ -124,7 +124,7 @@ const toggle = () => {
     }
     i.bi{
         font-size: 26px;
-        color: var(--color-branco);
+        color: var(--text-primary);
     }
 
     /* Menu resposivo */
@@ -134,7 +134,7 @@ const toggle = () => {
             padding: 10px 22px;
             height: fit-content;
         }.active{
-            background-color: var(--color-preto);
+            background-color: var(--bg-page);
         }
         .icone_menu{
             display: block;
@@ -164,8 +164,8 @@ const toggle = () => {
             width: 100%;
         }
         .links a{
-            font-size: var(--text-link-responsivo);
-            border-bottom: 1px solid var(--color-branco);
+            font-size: var(--font-link-lg);
+            border-bottom: 1px solid var(--border-default);
             padding: 5px 0px 10px 5px;
             border-right: none;
         }.links a:focus{
@@ -175,7 +175,7 @@ const toggle = () => {
             box-shadow: none;
         }
         button{
-            font-size: var(--text-butao-responsivo);
+            font-size: var(--font-button-lg);
             margin-top: 10px;
         }
     }

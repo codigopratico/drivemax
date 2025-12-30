@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--color-branco);
-    font-family: var(--family-principal);
+    color: var(--text-primary);
+    font-family: var(--font-primary-base);
     user-select: none;
 }
 
@@ -28,28 +28,33 @@ li{
 }
 
 button{
-    background-color: var(--color-laranja);
+    background-color: var(--brand-primary);
     border-radius: 10px;
     border: none;
     padding: 11px 10px;
     cursor: pointer;
-    font-size: var(--text-butao);
+    font-size: var(--font-button-sm);
     text-shadow: 10px 10px 25px #1f1f1f;
     box-shadow: 2px 2px 7px 1px rgba(255, 255, 255, 0.3);
     transition: ease-in-out 300ms;
 }
 
 button:hover{
-    background-color: var(--color-laranja-hover);
+    background-color: var(--brand-secundary-hover);
     transform: scale(1.02);
 }
 
 .titulo{
-    background-color: var(--color-rodape-bg);
+    background-color: var(--bg-section-dark);
     padding: 15px 10px;
     border-radius: 14px 14px 0 0;
     width: 100%;
-    font-size: var(--text-servicos-principal);
+    font-size: var(--font-body-sm);
     text-align: center;
     box-shadow: 2px 2px 7px 1px rgba(255, 255, 255, 0.3);
+}
+.light{
+    background-color: var(--bg-section-light);
+    box-shadow: 2px 2px 7px 1px rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--border-default);
 }

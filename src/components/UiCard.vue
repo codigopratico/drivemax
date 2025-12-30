@@ -46,7 +46,7 @@ const props = defineProps({
         max-width: 300px;
         text-align: center;
         box-shadow: 10px 4px 20px rgba(0, 0, 0, 0.2);
-        background-color: var(--color-branco);
+        background-color: var(--bg-card);
         border-radius: 15px;
         transition: ease-in-out 300ms;
     }.card:hover{
@@ -61,14 +61,14 @@ const props = defineProps({
         width: 100%;
     }
     h2, p{
-        color: var(--color-preto-texto);
+        color: var(--text-dark);
     }
     h2{
-        font-size: var(--text-servicos-titulo);
+        font-size: var(--font-title-sm);
         min-width: 280px;
     }
     p{
-        font-size: var(--text-servicos-subtitulo);
+        font-size: var(--font-body-md);
     }
     img{
         width: fit-content;

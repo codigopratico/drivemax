@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import IconesView from './seguranca/IconesView.vue';
+import Card from './SecurityCards.vue';
 
 const titulo = ref('COMPRE SEU CARRO COM SEGURANÇA')
 const texto = ref('Tenha a tranquilidade de fazer um bom negócio sem surpresas.')
@@ -17,7 +17,7 @@ const btn2 = ref('FALAR COM ESPECIALISTA')
         <div class="texto">
             <h3>{{ texto }}</h3>
         </div>
-        <IconesView :icones="icones" />
+        <Card :icones="icones" />
         <div class="imagens">
             <div class="img">
             </div>
@@ -32,7 +32,7 @@ const btn2 = ref('FALAR COM ESPECIALISTA')
 <style scoped>
     .main{
         width: 100%;
-        background-color: var(--color-fundo-branco);
+        background-color: var(--bg-section-light);
         border-radius: 15px;
         display: flex;
         flex-direction: column;
@@ -46,7 +46,7 @@ const btn2 = ref('FALAR COM ESPECIALISTA')
         display: flex;
         flex-direction: column;
         gap: 7px;
-        background-color: var(--color-laranja);
+        background-color: var(--brand-primary);
         border-radius: 15px;
     }
     .img{
@@ -76,17 +76,19 @@ const btn2 = ref('FALAR COM ESPECIALISTA')
         text-align: center;
     }
     h3{
-        font-size: var(--text-servicos-titulo);
+        color: var(--text-dark);
+        font-size: var(--font-title-sm);
+  
     }
     button{
-        font-size: var(--text-butao-responsivo);
-        border: 1px solid var(--color-branco);
+        font-size: var(--font-button-xl);
+        border: 1px solid var(--border-default);
     }
     button a{
         padding: 10px;
     }
     #secundario{
-        background-color: var(--color-texto-secundario);
+        background-color: var(--text-muted);
     }
 
     @media screen and (max-width: 600px){

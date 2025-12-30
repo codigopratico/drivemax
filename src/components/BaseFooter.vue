@@ -18,7 +18,7 @@ const email = ref('drivemax@gmail.com')
     <div class="main">
             <div class="redes">
                 <div class="logo">
-                    <img src="../../assets/img/logo.png" alt="">
+                    <img src="../assets/img/logo.png" alt="">
                 </div>
                 <ul class="icones">
                     <li>
@@ -37,23 +37,23 @@ const email = ref('drivemax@gmail.com')
             </div>
 
             <div class="links">
-                <a href="#inicio">
+                <a href="#home">
                     <i class="bi bi-house-fill"></i>
                     {{ link_1 }}
                 </a>
-                <a href="#servicos">
+                <a href="#services">
                     <i class="bi bi-briefcase-fill"></i>
                     {{ link_2 }}
                 </a>
-                <a href="#depoimentos">
+                <a href="#review">
                     <i class="bi bi-chat-dots-fill"></i>
                     {{ link_3 }}
                 </a>
-                <a href="#seguranca">
+                <a href="#security">
                     <i class="bi bi-shield-fill-check"></i>
                     {{ link_4 }}
                 </a>
-                <a href="#contato">
+                <a href="#contact">
                     <i class="bi bi-telephone-fill"></i>
                     {{ link_5 }}
                 </a>
@@ -67,7 +67,7 @@ const email = ref('drivemax@gmail.com')
 <style scoped>
     .main{
         width: 100%;
-        background-color: var(--color-rodape-bg);
+        background-color: var(--bg-footer);
         padding: 40px 0 20px;
         border-radius: 0px 0 15px 15px;
         box-shadow: -2px -2px 7px 1px rgba(255, 255, 255, 0.3);
@@ -86,14 +86,14 @@ const email = ref('drivemax@gmail.com')
         display: flex;
         align-items: center;
         gap: 3px;
-        font-size: var(--text-redes);
+        font-size: var(--font-body-md);
         cursor: pointer;
         transition: all 200ms;
     }.icones li:hover{
         transform: scale(1.03);
     }
     img{
-        height: var(--img-logo);
+        height: var(--size-logo);
     }
 
     .links{
@@ -102,7 +102,7 @@ const email = ref('drivemax@gmail.com')
         justify-content: center;
         align-items: center;
         padding: 25px 0 10px 0;
-        font-size: var(--text-link-responsivo);
+        font-size: var(--font-link-lg);
         border-bottom: 1px solid var(--color-borda);
     }.links a{
         padding: 0 2.5%;
@@ -123,13 +123,13 @@ const email = ref('drivemax@gmail.com')
         font-weight: 400;
     }
     i{
-        color: var(--color-laranja);
+        color: var(--brand-primary);
     }
     i.bi{
-        color: var(--color-branco);
+        color: var(--text-primary);
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 850px){
         .redes{
             flex-direction: column;
         }
@@ -139,7 +139,7 @@ const email = ref('drivemax@gmail.com')
         }
     }
 
-    @media screen and (max-width: 625px) {
+    @media screen and (max-width: 785px) {
         .main{
             height: fit-content;
             padding-bottom: 5px;

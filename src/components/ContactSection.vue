@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import RodapeView from './chamada/RodapeView.vue';
+import BaseFooter from './BaseFooter.vue';
 
 const titulo = ref('PRONTO PARA COMPRAR SEU CARRO IDEAL?')
 const subtitulo = ref('Deixe a DriveMax guiar você até a melhor escolha!')
@@ -21,14 +21,14 @@ const btn2 = ref('FALAR COM CONSULTOR')
                 <button id="btn2"><a href="https://github.com/codigopratico" target="_blank">{{ btn2 }}</a></button>
             </div>
         </div>
-        <RodapeView />
+        <BaseFooter />
     </div>
 </template>
 
 <style scoped>
     .principal{
         width: 100%;
-        background-color: var(--color-fundo-branco);
+        background-color: var(--bg-section);
         border-radius: 15px;
         padding: 40px 0 0 0;
     }
@@ -38,6 +38,7 @@ const btn2 = ref('FALAR COM CONSULTOR')
         gap: 40px;
         align-items: center;
         padding: 35px 0;
+        background-color: var(--bg-section-light);
     }
     .texto{
         display: flex;
@@ -48,10 +49,12 @@ const btn2 = ref('FALAR COM CONSULTOR')
     }
 
     .texto h1{
-        font-size: var(--text-titulo-secundario);
+        font-size: var(--font-heading-lg);
+        color: var(--text-dark);
     }
     .texto h4{
-        font-size: var(--text-subtitulo-secundario);
+        color: var(--text-dark);
+        font-size: var(--font-subtitle-md);
         font-weight: 400;
     }
     .butoes{
@@ -59,11 +62,12 @@ const btn2 = ref('FALAR COM CONSULTOR')
         gap: 15px;
     }
     #btn2{
-        background-color: var(--color-texto-secundario);
-        border: 1px solid var(--color-branco);
+        background-color: var(--text-muted);
+        border: 1px solid var(--border-default);
     }
     button{
-        font-size: var(--text-butao-principal);
+        font-size: var(--font-button-lg);
+        border: 1px solid var(--text-dark);
     }
     button a{
         padding: 10px;

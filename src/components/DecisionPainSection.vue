@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import CardView from './CardView.vue';
+import UiCard from './UiCard.vue';
 import opcoes from '@/assets/img/secao_1/icone_opcoes.png'
 import medo from '@/assets/img/secao_1/icone_medo.png'
 import dificuldade from '@/assets/img/secao_1/icone_dificuldade.png'
@@ -37,11 +37,11 @@ const subtitulo = ref('Nós estamos aqui para ajudar você.')
 
 <template>
     <div class="main">
-        <div class="titulo">
+        <div class="titulo light">
             <h1>{{ titulo }}</h1>
         </div>
         <div class="conteudo">
-            <CardView :servicos="servicos" />
+            <UiCard :servicos="servicos" />
             <hr>
             <h2>{{ subtitulo }}</h2>
         </div>
@@ -53,7 +53,7 @@ const subtitulo = ref('Nós estamos aqui para ajudar você.')
         display: flex;
         flex-direction: column;
         gap: 35px;
-        background-color: var(--color-fundo-branco);
+        background-color: var(--bg-section-dark);
         padding: 0 0 25px 0;
         border-radius: 15px;
     }
@@ -63,13 +63,17 @@ const subtitulo = ref('Nós estamos aqui para ajudar você.')
         gap: 35px;
         align-items: center;
     }
+    h1{
+        color: var(--text-dark);
+    }
     hr{
         width: 90%;
-        border: 1px solid var(--color-branco);
+        border: 1px solid var(--border-default);
     }
     h2{
-
-        font-size: var(--text-servicos-titulo);
+        color: var(--text-primary);
+        font-size: var(--font-title-sm);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
 </style>

@@ -62,7 +62,7 @@ const icones = ref([
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         padding: 10px;
         border-radius: 15px;
-        background-color: var(--color-branco);
+        background-color: var(--bg-card);
         box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.4);
         transition: all 300ms;
     }
@@ -71,9 +71,9 @@ const icones = ref([
         box-shadow: 5px 5px 10px 1px rgba(255, 255, 255, 0.15);
     }
     h4{
-        font-size: var(--text-seguranca-titulo);
+        font-size: var(--font-body-md);
         padding-top: 10px;
-        color: var(--color-preto);
+        color: var(--bg-page);
     }
     img{
         height: clamp(120px, 4vh, 160px);

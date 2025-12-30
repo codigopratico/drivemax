@@ -65,12 +65,12 @@ const avaliacoes = ref([
         gap: 25px;
         padding: 25px 10px;
         min-width: 200px;
-        max-width: 340px;
+        max-width: 380px;
         border-radius: 15px;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
         min-height: 420px;
         max-height: 700px;
-        background-color: var(--color-branco);
+        background-color: var(--bg-card);
         transition: all 300ms;
     }
     .avaliacao:hover{
@@ -99,27 +99,28 @@ const avaliacoes = ref([
         gap: 3px;
     }
     i{
-        color: var(--color-estrela);
+        color: var(--star);
         font-size: 20px;
         box-shadow: 5px 5px 25px rgba(255, 255, 255, 0.15);
     }
     h2, p{
-        color: var(--color-preto);
+        color: var(--bg-page);
     }
     .comentario{
         width: clamp(80%, 5vw, 85%);
     }
     h2{
-        font-size: var(--text-subtitulo);
+        font-size: var(--font-subtitle-lg);
         text-shadow: 5px 5px 25px rgba(255, 255, 255, 1);
     }
     p{
-        font-size: var(--text-comentario);
+        font-size: var(--font-comment);
     }
 
     @media screen and (max-width: 768px) {
         .avaliacao{
             min-height: 260px;
+            max-width: 335px;
         }
     }
 </style>
