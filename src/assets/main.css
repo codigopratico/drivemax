@@ -40,7 +40,7 @@ button{
 }
 
 button:hover{
-    background-color: var(--brand-secundary-hover);
+    background-color: var(--brand-primary-hover);
     transform: scale(1.02);
 }
 

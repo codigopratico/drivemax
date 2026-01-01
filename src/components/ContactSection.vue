@@ -28,7 +28,7 @@ const btn2 = ref('FALAR COM CONSULTOR')
 <style scoped>
     .principal{
         width: 100%;
-        background-color: var(--bg-section);
+        background-color: var(--bg-section-dark);
         border-radius: 15px;
         padding: 40px 0 0 0;
     }

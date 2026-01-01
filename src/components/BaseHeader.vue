@@ -80,6 +80,11 @@ const toggle = () => {
         align-items: center;
         gap: 12px;
     }
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
     .icone_menu{
         display: none;
     }.logo{
@@ -154,6 +159,7 @@ const toggle = () => {
             width: 100%;
             max-width: 100%;
             box-sizing: border-box;
+            gap: 0;
         }
         .links{
             flex-direction: column;
