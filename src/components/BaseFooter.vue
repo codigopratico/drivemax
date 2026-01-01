@@ -23,15 +23,15 @@ const email = ref('drivemax@gmail.com')
                 <ul class="icones">
                     <li>
                         <i class="bi bi-envelope"></i>
-                        <a href="#">{{ email }}</a>
+                        <a href="https://github.com/codigopratico" target="_blank">{{ email }}</a>
                     </li>
                     <li>
                         <i class="bi bi-telephone"></i>
-                        <a href="#">{{ telefone }}</a>
+                        <a href="https://github.com/codigopratico" target="_blank">{{ telefone }}</a>
                     </li>
                     <li>
                         <i class="bi bi-geo-alt-fill"></i>
-                        <a href="#">{{ local }}</a>
+                        <a href="https://github.com/codigopratico" target="_blank">{{ local }}</a>
                     </li>
                 </ul>
             </div>
