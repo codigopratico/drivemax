@@ -74,6 +74,7 @@ const btn2 = ref('FALAR COM ESPECIALISTA')
         border-radius: 0 0 15px 15px;
     }.texto{
         text-align: center;
+        padding: 0 5px;
     }
     h3{
         color: var(--text-dark);

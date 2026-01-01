@@ -60,6 +60,7 @@ const btn = ref('FALE COM CONSULTOR')
     .botao button{
         font-size: var(--font-button-xl);
         text-shadow: 10px 10px 25px #fff;
+        border: 1px solid var(--text-dark);
     }
     button a{
         padding: 10px;

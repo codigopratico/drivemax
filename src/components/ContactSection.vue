@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref} from 'vue'
 import BaseFooter from './BaseFooter.vue';
 
 const titulo = ref('PRONTO PARA COMPRAR SEU CARRO IDEAL?')

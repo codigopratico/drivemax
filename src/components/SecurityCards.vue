@@ -52,6 +52,7 @@ const icones = ref([
         gap: 45px;
         padding: 15px 10px;
         flex-wrap: wrap;
+        padding: 0 5px;
     }
     .icone{
         display: flex;

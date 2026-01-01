@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-import Header from '@/components/BaseHeader.vue'
+import BaseHeader from '@/components/BaseHeader.vue'
 
 const texto = ref('Nós ajudamos você a comprar o carro ideal com segurança e confiança.')
 
@@ -11,13 +11,13 @@ const btn2 = ref('SAIBA MAIS')
 
 <template>
     <div class="main">
-        <Header />
+        <BaseHeader />
         <div class="conteudo">
             <h1>ESCOLHER O <span>CARRO CERTO</span> PODE SER COMPLICADO.</h1>
             <h4>{{ texto }}</h4>
             <div class="botoes">
                 <button href=""><a href="https://github.com/codigopratico" target="_blank">{{ btn1 }}</a></button>
-                <button id="secundario"><a href="#servicos">{{ btn2 }}</a></button>
+                <button id="secundario"><a href="#services">{{ btn2 }}</a></button>
             </div>
         </div>
     </div>

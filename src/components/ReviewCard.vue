@@ -56,6 +56,7 @@ const avaliacoes = ref([
         justify-content: center;
         gap: 35px;
         flex-wrap: wrap;
+        padding: 0 10px;
     }
     .avaliacao{
         display: flex;
