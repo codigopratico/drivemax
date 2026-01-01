@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/DriveMAX/',
+  base: '/drivemax/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
