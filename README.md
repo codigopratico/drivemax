@@ -1,95 +1,86 @@
-🚗 DriveMax
+# 🚗 DriveMax
 
-DriveMax é uma landing page fictícia de consultoria automotiva, desenvolvida com foco em UI consistente, hierarquia visual clara e boas práticas de front-end moderno.
+**DriveMax** é uma landing page fictícia de **consultoria automotiva**, desenvolvida com foco em **UI consistente**, **hierarquia visual clara** e **boas práticas de front-end moderno**.
 
-O projeto simula uma empresa que auxilia clientes na escolha e compra segura de veículos, servindo como estudo prático e peça de portfólio.
+O projeto simula uma empresa que auxilia clientes na escolha e compra segura de veículos, servindo como **estudo prático** e **peça de portfólio**.
 
-🔗 Demo:
-https://codigopratico.github.io/drivemax/
+🔗 **Demo:**  
+[https://codigopratico.github.io/drivemax/](https://codigopratico.github.io/drivemax/)
 
-🎯 Objetivo do Projeto
+---
+
+## 🎯 Objetivo do Projeto
 
 Este projeto foi criado para:
 
-Consolidar fundamentos de Vue 3 (Composition API)
+- Consolidar fundamentos do **Vue 3 (Composition API)**
+- Aplicar **design tokens** (cores, tipografia e espaçamentos)
+- Trabalhar **componentização realista**, como em projetos profissionais
+- Implementar animações baseadas em rolagem com **IntersectionObserver**
+- Simular um **produto real**, e não apenas telas isoladas
 
-Aplicar padronização de design tokens (cores, tipografia, espaçamentos)
+---
 
-Trabalhar componentização realista, como em projetos profissionais
+## 🧱 Estrutura da Aplicação
 
-Implementar animações baseadas em rolagem (IntersectionObserver)
+A aplicação segue um padrão **Section-based**, onde cada seção da landing page é isolada em seu próprio componente, evitando componentes genéricos e confusos.
 
-Simular um produto real, não apenas telas soltas
+### Seções
 
-🧱 Estrutura da Aplicação
+- **HomeSection** — Hero principal e proposta de valor  
+- **ServicesSection** — Processo de consultoria  
+- **ReviewSection** — Depoimentos de clientes  
+- **SecuritySection** — Confiança e segurança na compra  
+- **DecisionPainSection** — Dores do usuário e identificação  
+- **ContactSection** — Chamada para ação e rodapé  
 
-A aplicação é organizada por seções semânticas, cada uma isolada em seu próprio componente:
+---
 
-HomeSection – Hero principal e proposta de valor
+## 🎨 Design System
 
-ServicesSection – Processo de consultoria
+O projeto utiliza **CSS Variables** como design tokens, centralizando decisões visuais e garantindo consistência.
 
-ReviewSection – Depoimentos de clientes
+### 🎨 Cores
+- Brand primária (laranja)
+- Fundos claros e escuros bem definidos
+- Cards sempre em fundo branco para melhor contraste
+- Cores de texto separadas por função (primary, dark, muted)
 
-SecuritySection – Confiança e segurança na compra
+### 🔤 Tipografia
+- Escalas tipográficas padronizadas (heading, subtitle, body, button)
+- Uso extensivo de `clamp()` para responsividade real
+- Fonte base: **Inter**
 
-DecisionPainSection – Dores do usuário e identificação
+Essa abordagem reduz inconsistências visuais e facilita a manutenção do CSS.
 
-ContactSection – Chamada para ação + rodapé
+---
 
-Essa separação segue um padrão Section-based, evitando componentes genéricos e confusos.
+## ✨ Animações
 
-🎨 Design System
+As animações são ativadas quando as seções entram na viewport, utilizando **IntersectionObserver**:
 
-O projeto utiliza CSS Variables como design tokens, centralizando decisões visuais:
+- Melhora a percepção de qualidade da interface
+- Evita animações desnecessárias fora da tela
+- Não depende de bibliotecas externas
+- Implementação simples e performática
 
-Cores
+---
 
-Brand primária (laranja)
+## 🛠️ Tecnologias Utilizadas
 
-Fundos escuros e claros bem definidos
+- **Vue 3**
+- **Vite**
+- **Composition API**
+- **CSS moderno** (Variables, `clamp()`, Flexbox)
+- **GitHub Pages**
 
-Cards sempre em fundo branco para contraste
+> Nenhuma dependência desnecessária foi utilizada.
 
-Texto separado por função (primary, dark, muted)
+---
 
-Tipografia
+## 📁 Organização de Pastas
 
-Escalas tipográficas padronizadas (heading, subtitle, body, button)
-
-Uso extensivo de clamp() para responsividade real
-
-Fonte base: Inter
-
-Isso evita CSS inconsistente e facilita manutenção.
-
-✨ Animações
-
-As seções utilizam IntersectionObserver para ativar animações ao entrar na viewport:
-
-Melhora a percepção de qualidade
-
-Evita animações desnecessárias
-
-Não depende de bibliotecas externas
-
-Implementação simples e performática.
-
-🛠️ Tecnologias Utilizadas
-
-Vue 3
-
-Vite
-
-Composition API
-
-CSS moderno (clamp, variables, flexbox)
-
-GitHub Pages
-
-Nenhuma dependência desnecessária.
-
-📁 Organização
+```txt
 src/
 ├─ components/
 │  ├─ HomeSection.vue
@@ -105,23 +96,27 @@ src/
 ├─ styles/
 │  ├─ base.css
 │  └─ main.css
+```
+---
 
-⚠️ Observações Importantes
+## ⚠️ Observações Importantes
 
-Este é um projeto fictício, criado exclusivamente para fins educacionais.
+- Este é um **projeto fictício**, criado exclusivamente para fins educacionais.
+- Nenhuma informação de contato apresentada é real.
+- O foco do projeto está em **arquitetura, organização e clareza de código**, não em backend.
 
-Nenhuma informação de contato é real.
+---
 
-O foco está em arquitetura, organização e clareza, não em backend.
+## 📌 Status do Projeto
 
-📌 Status do Projeto
+- ✔ Estrutura sólida  
+- ✔ Design consistente  
+- ✔ Pronto para portfólio  
+- ✔ Base escalável para projetos maiores  
 
-✔ Estrutura sólida
-✔ Design consistente
-✔ Pronto para portfólio
-✔ Base escalável para projetos maiores
+---
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
-Kauan Gabriel  
-Desenvolvedor Front-end — CódigoPrático
+**Kauan Gabriel**  
+Desenvolvedor Front-end — **CódigoPrático**
