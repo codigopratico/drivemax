@@ -1,44 +1,127 @@
-# DriveMax
+🚗 DriveMax
 
-This template should help get you started developing with Vue 3 in Vite.
+DriveMax é uma landing page fictícia de consultoria automotiva, desenvolvida com foco em UI consistente, hierarquia visual clara e boas práticas de front-end moderno.
 
-## Recommended IDE Setup
+O projeto simula uma empresa que auxilia clientes na escolha e compra segura de veículos, servindo como estudo prático e peça de portfólio.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🔗 Demo:
+https://codigopratico.github.io/drivemax/
 
-## Recommended Browser Setup
+🎯 Objetivo do Projeto
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Este projeto foi criado para:
 
-## Customize configuration
+Consolidar fundamentos de Vue 3 (Composition API)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Aplicar padronização de design tokens (cores, tipografia, espaçamentos)
 
-## Project Setup
+Trabalhar componentização realista, como em projetos profissionais
 
-```sh
-npm install
-```
+Implementar animações baseadas em rolagem (IntersectionObserver)
 
-### Compile and Hot-Reload for Development
+Simular um produto real, não apenas telas soltas
 
-```sh
-npm run dev
-```
+🧱 Estrutura da Aplicação
 
-### Compile and Minify for Production
+A aplicação é organizada por seções semânticas, cada uma isolada em seu próprio componente:
 
-```sh
-npm run build
-```
+HomeSection – Hero principal e proposta de valor
 
-### Lint with [ESLint](https://eslint.org/)
+ServicesSection – Processo de consultoria
 
-```sh
-npm run lint
-```
+ReviewSection – Depoimentos de clientes
+
+SecuritySection – Confiança e segurança na compra
+
+DecisionPainSection – Dores do usuário e identificação
+
+ContactSection – Chamada para ação + rodapé
+
+Essa separação segue um padrão Section-based, evitando componentes genéricos e confusos.
+
+🎨 Design System
+
+O projeto utiliza CSS Variables como design tokens, centralizando decisões visuais:
+
+Cores
+
+Brand primária (laranja)
+
+Fundos escuros e claros bem definidos
+
+Cards sempre em fundo branco para contraste
+
+Texto separado por função (primary, dark, muted)
+
+Tipografia
+
+Escalas tipográficas padronizadas (heading, subtitle, body, button)
+
+Uso extensivo de clamp() para responsividade real
+
+Fonte base: Inter
+
+Isso evita CSS inconsistente e facilita manutenção.
+
+✨ Animações
+
+As seções utilizam IntersectionObserver para ativar animações ao entrar na viewport:
+
+Melhora a percepção de qualidade
+
+Evita animações desnecessárias
+
+Não depende de bibliotecas externas
+
+Implementação simples e performática.
+
+🛠️ Tecnologias Utilizadas
+
+Vue 3
+
+Vite
+
+Composition API
+
+CSS moderno (clamp, variables, flexbox)
+
+GitHub Pages
+
+Nenhuma dependência desnecessária.
+
+📁 Organização
+src/
+├─ components/
+│  ├─ HomeSection.vue
+│  ├─ ServicesSection.vue
+│  ├─ ReviewSection.vue
+│  ├─ SecuritySection.vue
+│  ├─ DecisionPainSection.vue
+│  └─ ContactSection.vue
+│
+├─ assets/
+│  └─ img/
+│
+├─ styles/
+│  ├─ base.css
+│  └─ main.css
+
+⚠️ Observações Importantes
+
+Este é um projeto fictício, criado exclusivamente para fins educacionais.
+
+Nenhuma informação de contato é real.
+
+O foco está em arquitetura, organização e clareza, não em backend.
+
+📌 Status do Projeto
+
+✔ Estrutura sólida
+✔ Design consistente
+✔ Pronto para portfólio
+✔ Base escalável para projetos maiores
+
+👨‍💻 Autor
+
+Kauan Gabriel  
+Desenvolvedor Front-end — CódigoPrático
